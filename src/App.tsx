@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Layout, Typography, Space } from "antd";
+import { Navbar } from "./components";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className=" font-sans">
+        <Navbar />
+        <div className="flex justify-center w-full">
+          <div className="flex justify-center items-center max-w-6xl">
+            <Outlet />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
