@@ -26,7 +26,7 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="flex justify-center flex-col w-full items-center">
+      <div className="flex justify-center flex-col w-full items-center mt-10">
         <div className="flex justify-center items-center my-32 px-5">
           <div className=" flex justify-center items-center w-6/12">
             <img className="w-7/12 max-w-3xl h-auto" src={cryptoImage} alt="" />
