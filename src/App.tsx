@@ -7,7 +7,7 @@ function App() {
     <>
       <div className=" font-sans">
         <Navbar />
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full mt-10">
           <div className="flex justify-center items-center max-w-6xl">
             <Outlet />
           </div>

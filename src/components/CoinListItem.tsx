@@ -3,7 +3,7 @@ import millify from "millify";
 
 export default function CoinListItem(props: IcoinListItem) {
   const changeStyle =
-    Number(props.dailyChange) < 0 ? " text-green-500" : " text-red-500";
+    Number(props.dailyChange) >= 0 ? " text-green-500" : " text-red-500";
   return (
     <>
       <div className=" bg-blue-50 flex justify-evenly items-center w-full h-16 shadow-none hover:shadow-xl hover:bg-blue-100 hover:border hover:border-blue-200">
