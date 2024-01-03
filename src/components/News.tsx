@@ -8,7 +8,7 @@ export default function News(props: Inews) {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `https://newsdata.io/api/1/news?apikey=pub_35586c6f9af2e44f0010a3851526def917935&q=crypto&language=en&size=${props.size}`
+        `https://newsdata.io/api/1/news?apikey=&q=crypto&language=en&size=${props.size}`
       );
       setData(response.data.results);
     } catch (error) {
